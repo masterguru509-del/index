@@ -1,0 +1,4397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Icon Image | Luxury-Позиционирование Брендов</title>
+    <meta name="description" content="Icon Image - luxury-позиционирование брендов. Создаём стратегию, эстетику и контент для luxury-сегмента.">
+    <meta property="og:title" content="Icon Image | Luxury-Позиционирование Брендов">
+    <meta property="og:description" content="Сделайте свой продукт luxury вместе с Icon Image">
+    <meta property="og:type" content="website">
+    
+    <!-- Шрифты -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #FF1465;
+            --primary-light: #FF5C95;
+            --primary-blue: #4A6FFF;
+            --primary-glow: rgba(255, 20, 101, 0.7);
+            --dark: #000000;
+            --darker: #0a0a0a;
+            --white: #FFFFFF;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-heavy: rgba(0, 0, 0, 0.6);
+            --border: rgba(255, 255, 255, 0.15);
+            --neon-glow: 0 0 20px var(--primary-glow),
+                         0 0 40px rgba(255, 20, 101, 0.3);
+            --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-luxury: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            
+            /* Цвета для иконок */
+            --emoji-blue: #00A3FF;
+            --emoji-purple: #9D4EDD;
+            --emoji-green: #00D4A7;
+            --emoji-yellow: #FFD700;
+            --emoji-orange: #FF7B00;
+            --emoji-pink: #FF6B9D;
+            --emoji-cyan: #00D4FF;
+            --emoji-lime: #B5FF00;
+            
+            /* Градиенты для эмодзи-иконок */
+            --gradient-blue: linear-gradient(135deg, var(--emoji-blue), var(--emoji-cyan));
+            --gradient-purple: linear-gradient(135deg, var(--emoji-purple), #C77DFF);
+            --gradient-green: linear-gradient(135deg, var(--emoji-green), #00FFC2);
+            --gradient-yellow: linear-gradient(135deg, var(--emoji-yellow), #FFEB3B);
+            --gradient-orange: linear-gradient(135deg, var(--emoji-orange), #FF9E00);
+            --gradient-pink: linear-gradient(135deg, var(--emoji-pink), var(--primary));
+            
+            /* Градиент для формы */
+            --form-border-gradient: linear-gradient(
+                135deg, 
+                rgba(230, 255, 230, 0.1) 0%, 
+                rgba(255, 255, 255, 0.05) 50%, 
+                rgba(230, 255, 230, 0.1) 100%
+            );
+            
+            /* Шрифты */
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-subheading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            /* Улучшенные размеры шрифтов */
+            --text-xs: 0.75rem;
+            --text-sm: 0.875rem;
+            --text-base: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --text-2xl: 1.5rem;
+            --text-3xl: 1.875rem;
+            --text-4xl: 2.25rem;
+            --text-5xl: 3rem;
+            --text-6xl: 3.75rem;
+            --text-7xl: 4.5rem;
+            
+            /* Отступы */
+            --spacing-xxs: 0.25rem;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 4rem;
+            --spacing-3xl: 6rem;
+            --spacing-4xl: 8rem;
+            
+            /* Межстрочные интервалы */
+            --line-height-tight: 1.2;
+            --line-height-normal: 1.6;
+            --line-height-loose: 1.8;
+            
+            /* Межбуквенные интервалы */
+            --letter-spacing-tight: -0.01em;
+            --letter-spacing-normal: 0;
+            --letter-spacing-wide: 0.01em;
+            --letter-spacing-wider: 0.05em;
+            --letter-spacing-heading: -0.02em;
+            
+            /* Дополнительные цвета */
+            --light-text: rgba(255, 255, 255, 0.9);
+            --medium-text: rgba(255, 255, 255, 0.75);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        @media (max-width: 1200px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        body {
+            background-color: var(--dark);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            line-height: var(--line-height-normal);
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            letter-spacing: var(--letter-spacing-normal);
+        }
+
+        /* ===== ПАРАЛЛАКС ФОНЫ ===== */
+        .parallax-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -3;
+            pointer-events: none;
+            will-change: transform;
+            transition: transform 0.8s var(--transition-luxury);
+        }
+
+        .layer-1 {
+            background: radial-gradient(circle at 80% 20%, 
+                       rgba(255, 20, 101, 0.25) 0%, 
+                       transparent 50%);
+            animation: float 20s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        .layer-2 {
+            background: radial-gradient(circle at 20% 80%, 
+                       rgba(255, 20, 101, 0.15) 0%, 
+                       transparent 40%);
+            animation: float 25s infinite ease-in-out reverse;
+            opacity: 0.5;
+        }
+
+        .layer-3 {
+            background: linear-gradient(45deg, 
+                       transparent 30%, 
+                       rgba(255, 20, 101, 0.05) 50%, 
+                       transparent 70%);
+            animation: scanline 15s infinite linear;
+            opacity: 0.3;
+        }
+
+        /* ===== ЧАСТИЦЫ ===== */
+        #particles {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: linear-gradient(45deg, #FF1465, #FF5C8D);
+            border-radius: 50%;
+            animation: particle-float 20s infinite linear;
+            box-shadow: 0 0 10px rgba(255, 20, 101, 0.5);
+            will-change: transform, opacity;
+        }
+
+        /* ===== АНИМАЦИИ ===== */
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(-50px, 100px) rotate(90deg); }
+            50% { transform: translate(100px, 50px) rotate(180deg); }
+            75% { transform: translate(50px, -50px) rotate(270deg); }
+        }
+
+        @keyframes scanline {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateY(-100px) translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes neon-pulse {
+            0%, 100% { box-shadow: var(--neon-glow); }
+            50% { box-shadow: 0 0 30px var(--primary-glow),
+                             0 0 60px rgba(255, 20, 101, 0.5); }
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+
+        @keyframes icon-spin {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(360deg); }
+        }
+
+        @keyframes float-up {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse-want {
+            0%, 100% { 
+                box-shadow: 0 0 15px rgba(255, 20, 101, 0.3),
+                            inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(255, 20, 101, 0.5),
+                            inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        @keyframes field-glow {
+            0%, 100% { 
+                border-color: rgba(255, 20, 101, 0.3);
+                box-shadow: 0 0 10px rgba(255, 20, 101, 0.1);
+            }
+            50% { 
+                border-color: rgba(255, 20, 101, 0.6);
+                box-shadow: 0 0 20px rgba(255, 20, 101, 0.3);
+            }
+        }
+
+        @keyframes slide-in-top {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slide-in-right {
+            from { transform: translateX(30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes success-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(74, 222, 128, 0.4); }
+            50% { box-shadow: 0 0 35px rgba(74, 222, 128, 0.7); }
+        }
+
+        @keyframes icon-glow {
+            0%, 100% { 
+                filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+            }
+            50% { 
+                filter: drop-shadow(0 0 15px rgba(255, 20, 101, 0.5));
+            }
+        }
+
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes matrix-cursor {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        @keyframes hero-visual-appear {
+            to {
+                opacity: 1;
+                transform: translateY(-40%) perspective(1000px) rotateY(-15deg);
+            }
+        }
+
+        @keyframes counter-increase {
+            0% { transform: scale(0.8); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* ===== АНИМАЦИЯ ПЕЧАТИ ТЕКСТА ===== */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--primary) }
+        }
+
+        .typing-text {
+            overflow: hidden;
+            border-right: 2px solid var(--primary);
+            white-space: nowrap;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        /* ===== УТОНЧЕННЫЕ РАЗДЕЛИТЕЛИ БЛОКОВ ===== */
+        .section-divider {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 20, 101, 0.4),
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.1),
+                transparent
+            );
+            animation: metallic-shimmer 8s infinite linear;
+            filter: blur(0.5px);
+        }
+
+        .section-divider.thicker::before {
+            height: 1.5px;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.15),
+                rgba(255, 255, 255, 0.35),
+                rgba(255, 20, 101, 0.5),
+                rgba(255, 255, 255, 0.35),
+                rgba(255, 255, 255, 0.15),
+                transparent
+            );
+            filter: blur(0.8px);
+        }
+
+        @keyframes metallic-shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* ОДИНАКОВЫЕ РАЗДЕЛИТЕЛИ ДЛЯ ВСЕХ БЛОКОВ */
+        .hero::after,
+        .welcome-section::after,
+        .brand-offer::after,
+        .why-premium::after,
+        .stages::after,
+        .cases::after,
+        .luxury-investments::before,
+        .team::after,
+        .faq::after,
+        .contact::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 20, 101, 0.3),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.1),
+                transparent
+            );
+            filter: blur(0.5px);
+            opacity: 0.7;
+        }
+
+        /* Исправленный разделитель для блока Пакеты - теперь такой же как у всех */
+        .luxury-investments::before {
+            top: 0;
+            height: 1px !important;
+            background: linear-gradient(90deg, 
+                transparent,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 20, 101, 0.3),
+                rgba(255, 255, 255, 0.2),
+                rgba(255, 255, 255, 0.1),
+                transparent
+            ) !important;
+            filter: blur(0.5px) !important;
+            opacity: 0.7 !important;
+        }
+
+        .hero::after,
+        .welcome-section::after,
+        .brand-offer::after,
+        .why-premium::after,
+        .stages::after,
+        .cases::after,
+        .team::after,
+        .faq::after,
+        .contact::after {
+            bottom: 0;
+        }
+
+        /* Позиционирование блоков для разделителей */
+        .hero,
+        .welcome-section,
+        .brand-offer,
+        .why-premium,
+        .stages,
+        .cases,
+        .luxury-investments,
+        .team,
+        .faq,
+        .contact {
+            position: relative;
+        }
+
+        .luxury-investments {
+            position: relative;
+        }
+
+        /* ===== БАЗОВЫЕ СТИЛИ ===== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--spacing-sm);
+            }
+        }
+
+        /* ===== СКОШЕНИЕ УГЛОВ ===== */
+        .beveled {
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+        }
+
+        /* ===== ЗАГОЛОВКИ ===== */
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            display: inline-block;
+            color: var(--white);
+            line-height: var(--line-height-tight);
+            letter-spacing: var(--letter-spacing-heading);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            opacity: 0.7;
+        }
+
+        /* ===== ЗАГОЛОВКИ КАРТОЧЕК — ЗОЛОТАЯ СЕРЕДИНА: +15% ===== */
+        .why-premium .card-title,
+        .stages .card-title,
+        .brand-offer .card-title,
+        .team-member h3 {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-xl) * 1.15); /* 1.25rem → 1.4375rem (23px) */
+            color: var(--white);
+            margin-bottom: var(--spacing-sm);
+            line-height: var(--line-height-tight);
+            text-align: center;
+        }
+
+        .why-premium .card-title::after,
+        .stages .card-title::after,
+        .brand-offer .card-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40%;
+            height: 1px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            opacity: 0.6;
+        }
+
+        /* Заголовки пакетов (investment-card) — +15% */
+        .investment-card h3 {
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-lg) * 1.15); /* 1.125rem → 1.29375rem (~20.7px) */
+            color: var(--white);
+            text-align: center;
+            margin: 15px 0 8px;
+            font-weight: 700;
+            letter-spacing: var(--letter-spacing-wide);
+            width: 100%;
+            word-break: break-word;
+        }
+
+        /* Заголовки кейсов — +15% */
+        .case-title {
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-2xl) * 1.15); /* 1.5rem → 1.725rem (27.6px) */
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            width: 100%;
+            line-height: var(--line-height-tight);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* ===== НАВИГАЦИЯ ===== */
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.5s var(--transition-luxury);
+            will-change: transform, backdrop-filter;
+        }
+
+        header.scrolled {
+            background: rgba(0, 0, 0, 0.95);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(30px);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm) 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+            gap: var(--spacing-xs);
+            transition: transform 0.5s var(--transition-luxury);
+        }
+
+        .logo:hover {
+            transform: translateY(-2px);
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: var(--text-lg);
+            font-weight: 600;
+            transform-style: preserve-3d;
+            animation: icon-spin 15s infinite linear;
+        }
+
+        .logo-text {
+            font-family: var(--font-heading);
+            font-size: var(--text-xl);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--white);
+        }
+
+        .logo-text span { 
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .nav-links { 
+            display: flex; 
+            list-style: none; 
+            gap: var(--spacing-sm);
+        }
+
+        .nav-links li { 
+            position: relative;
+        }
+
+        .nav-links a { 
+            text-decoration: none; 
+            color: var(--white); 
+            font-weight: 500; 
+            font-size: var(--text-sm);
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wider);
+            transition: all 0.5s var(--transition-luxury);
+            padding: var(--spacing-xs) 0;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            transition: width 0.5s var(--transition-luxury);
+            box-shadow: 0 0 10px var(--primary);
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* ===== ОБНОВЛЕННЫЙ HERO-БЛОК ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 100px;
+            overflow: hidden;
+            background: radial-gradient(circle at 80% 20%, 
+                       rgba(255, 20, 101, 0.05) 0%, 
+                       transparent 50%);
+        }
+
+        .hero-content {
+            width: 65%;
+            z-index: 2;
+            position: relative;
+            text-align: left;
+            transform: translateY(20px);
+            opacity: 0;
+            animation: slide-in-top 1.2s var(--transition-luxury) 0.1s forwards;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
+        .hero-heading-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            line-height: var(--line-height-tight);
+            position: relative;
+            text-align: left;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            letter-spacing: var(--letter-spacing-heading);
+            margin: 0;
+        }
+
+        .hero h1 .premium {
+            font-weight: 700;
+            font-size: var(--text-5xl);
+            display: block;
+            line-height: var(--line-height-tight);
+            letter-spacing: var(--letter-spacing-heading);
+            color: rgba(255, 255, 255, 1);
+            text-shadow: 0 0 15px rgba(255, 20, 101, 0.5);
+            transition: all 0.5s var(--transition-luxury);
+            margin-bottom: 0;
+        }
+
+        .hero h1 .subtitle {
+            font-family: var(--font-subheading);
+            font-weight: 600;
+            font-size: var(--text-3xl);
+            color: rgba(255, 255, 255, 0.9);
+            display: block;
+            line-height: var(--line-height-tight);
+            letter-spacing: var(--letter-spacing-wide);
+            font-style: normal;
+            transition: all 0.5s var(--transition-luxury);
+            margin-top: 0;
+        }
+
+        .hero-text-block {
+            max-width: 700px;
+            opacity: 0;
+            animation: slide-in-right 1.5s var(--transition-luxury) 0.4s forwards;
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            margin: 0;
+            position: relative;
+        }
+
+        .hero-main-line {
+            font-family: var(--font-body);
+            font-size: var(--text-xl);
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.85);
+            display: block;
+            line-height: var(--line-height-normal);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .hero-sub-line {
+            font-family: var(--font-body);
+            font-size: var(--text-xl);
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.75);
+            display: block;
+            line-height: var(--line-height-normal);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .cta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: slide-in-top 1.8s var(--transition-luxury) 0.7s forwards;
+            margin: 0;
+            width: 68%;
+            max-width: 490px;
+            position: relative;
+        }
+
+        .cta .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s var(--transition-luxury);
+            box-shadow: 0 5px 25px rgba(255, 20, 101, 0.4);
+            gap: 8px;
+            line-height: 1;
+            font-family: var(--font-body);
+            min-width: 150px;
+            width: calc(50% - 10px);
+            text-align: center;
+            height: 46px;
+        }
+
+        .cta .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                       transparent, 
+                       rgba(255, 255, 255, 0.2), 
+                       transparent);
+            transition: left 0.7s var(--transition-luxury);
+        }
+
+        .cta .btn:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255, 20, 101, 0.6);
+        }
+
+        .cta .btn:hover::before {
+            left: 100%;
+        }
+
+        .cta .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            background: transparent;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            border: 2px solid var(--white);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s var(--transition-luxury);
+            gap: 8px;
+            line-height: 1;
+            font-family: var(--font-body);
+            min-width: 150px;
+            width: calc(50% - 10px);
+            text-align: center;
+            height: 46px;
+        }
+
+        .cta .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+        }
+
+        .hero-slogan {
+            text-align: left;
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            font-weight: 400;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.65);
+            position: relative;
+            padding-left: var(--spacing-lg);
+            line-height: var(--line-height-normal);
+            opacity: 0;
+            animation: slide-in-right 2s var(--transition-luxury) 1s forwards;
+            margin: 0;
+        }
+
+        .hero-slogan::before {
+            content: '»';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-size: var(--text-2xl);
+        }
+
+        .hero-visual {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-40%) perspective(1000px) rotateY(-15deg);
+            width: 50%;
+            height: 70%;
+            z-index: 1;
+            transition: transform 1s var(--transition-luxury);
+            opacity: 0;
+            animation: hero-visual-appear 2s var(--transition-luxury) 1.2s forwards;
+        }
+
+        .hero-visual:hover {
+            transform: translateY(-40%) perspective(1000px) rotateY(-10deg) scale(1.02);
+        }
+
+        .cyber-gif-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border: 1px solid var(--border);
+            filter: drop-shadow(0 0 40px var(--primary-glow));
+            transform-style: preserve-3d;
+            overflow: hidden;
+        }
+
+        .cyber-gif {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .cyber-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, 
+                       var(--primary-glow) 0%, 
+                       transparent 70%);
+            filter: blur(30px);
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        /* ===== ОБНОВЛЕННАЯ СЕКЦИЯ "ЛАБОРАТОРИЯ ЛЮКСА" ===== */
+        .welcome-section {
+            padding: var(--spacing-lg) 0;
+            background: #000000 !important;
+            border: none !important;
+            min-height: auto;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s var(--transition-luxury);
+        }
+
+        .welcome-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .welcome-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .welcome-container {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+        }
+
+        .welcome-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .welcome-card {
+            width: 100%;
+            height: 520px;
+            background: transparent;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-card {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-card {
+                height: 345px;
+            }
+        }
+
+        .welcome-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 53%;
+            display: block;
+            max-width: none;
+            max-height: none;
+            opacity: 1;
+            border-radius: 8px;
+        }
+
+        .welcome-right {
+            padding: var(--spacing-md);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-top: 0;
+        }
+
+        /* ЗАГОЛОВОК "ЛАБОРАТОРИЯ ЛЮКСА" — ПОДЧЕРКИВАНИЕ КАК В КЕЙСАХ */
+        .welcome-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--white);
+            line-height: var(--line-height-tight);
+            text-align: left;
+            margin-bottom: 0.5rem;
+            letter-spacing: var(--letter-spacing-heading);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+
+        .welcome-title::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            opacity: 0.9;
+        }
+
+        .welcome-subtitle {
+            font-family: var(--font-heading);
+            font-size: var(--text-2xl);
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-normal);
+            text-align: left;
+            margin-bottom: 0.25rem;
+            min-height: 40px;
+            position: relative;
+            margin-top: 1.5rem;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background-color: var(--primary);
+            margin-left: 4px;
+            vertical-align: text-bottom;
+            animation: blink-caret .75s step-end infinite;
+        }
+
+        .situations-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            margin-top: 0.75rem;
+        }
+
+        .situation-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-sm);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+
+        .situation-item.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .situation-item:hover {
+            background: rgba(255, 20, 101, 0.05);
+            border-color: rgba(255, 20, 101, 0.2);
+            transform: translateX(5px) !important;
+        }
+
+        .situation-item i {
+            color: var(--primary);
+            font-size: var(--text-lg);
+            width: 28px;
+            text-align: center;
+            margin-top: 2px;
+            min-width: 28px;
+        }
+
+        .situation-item span {
+            font-size: var(--text-base);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.5;
+            flex: 1;
+        }
+
+        .welcome-conclusion {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: rgba(255, 255, 255, 0.7);
+            line-height: var(--line-height-normal);
+            text-align: left;
+            margin-top: var(--spacing-sm);
+            font-style: italic;
+            padding-left: var(--spacing-md);
+            border-left: 2px solid var(--primary);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.8s var(--transition-luxury);
+        }
+
+        .welcome-conclusion.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 1200px) {
+            .welcome-title {
+                font-size: var(--text-3xl);
+            }
+            
+            .welcome-subtitle {
+                font-size: var(--text-xl);
+                margin-bottom: 0.5rem;
+            }
+            
+            .situations-list {
+                margin-top: 0;
+            }
+            
+            .situation-item span {
+                font-size: var(--text-sm);
+            }
+            
+            .welcome-conclusion {
+                font-size: var(--text-sm);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .welcome-title {
+                font-size: var(--text-2xl);
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+            
+            .welcome-subtitle {
+                font-size: var(--text-lg);
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+            
+            .situations-list {
+                margin-top: 0;
+            }
+            
+            .situation-item {
+                padding: var(--spacing-xs);
+            }
+            
+            .situation-item span {
+                font-size: var(--text-xs);
+            }
+            
+            .welcome-conclusion {
+                font-size: var(--text-xs);
+                text-align: center;
+                padding-left: 0;
+                border-left: none;
+                border-top: 2px solid var(--primary);
+                padding-top: var(--spacing-sm);
+                margin-top: var(--spacing-md);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .welcome-title {
+                font-size: var(--text-xl);
+                margin-bottom: 0.25rem;
+            }
+            
+            .welcome-subtitle {
+                font-size: var(--text-base);
+                margin-bottom: 0.5rem;
+            }
+            
+            .situations-list {
+                margin-top: 0;
+            }
+            
+            .situation-item i {
+                font-size: var(--text-base);
+            }
+            
+            .welcome-conclusion {
+                font-size: var(--text-xs);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-title {
+                font-size: var(--text-lg);
+                margin-bottom: 0;
+            }
+            
+            .welcome-subtitle {
+                font-size: var(--text-xs);
+                margin-bottom: 0.5rem;
+            }
+            
+            .situations-list {
+                margin-top: 0;
+            }
+            
+            .situation-item {
+                padding: var(--spacing-xs);
+            }
+            
+            .situation-item span {
+                font-size: var(--text-xs);
+            }
+            
+            .welcome-conclusion {
+                font-size: var(--text-xs);
+            }
+        }
+
+        /* ===== ОБНОВЛЕННЫЕ КАРТОЧКИ ===== */
+        .modern-card {
+            background: var(--glass-heavy);
+            border: 1px solid var(--border);
+            padding: var(--spacing-lg);
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-up 0.6s ease forwards;
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+        }
+
+        .modern-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(255, 20, 101, 0.3);
+        }
+
+        .modern-card:nth-child(1) { animation-delay: 0.1s; }
+        .modern-card:nth-child(2) { animation-delay: 0.2s; }
+        .modern-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .modern-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-xl);
+            color: var(--white);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .modern-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-pink);
+            z-index: 1;
+        }
+
+        .modern-icon i {
+            position: relative;
+            z-index: 2;
+        }
+
+        .modern-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-pink .modern-icon::before {
+            background: var(--gradient-pink);
+        }
+
+        .icon-blue .modern-icon::before {
+            background: var(--gradient-blue);
+        }
+
+        .icon-purple .modern-icon::before {
+            background: var(--gradient-purple);
+        }
+
+        .icon-green .modern-icon::before {
+            background: var(--gradient-green);
+        }
+
+        .icon-orange .modern-icon::before {
+            background: var(--gradient-orange);
+        }
+
+        .icon-cyan .modern-icon::before {
+            background: var(--gradient-cyan);
+        }
+
+        /* ===== ОБНОВЛЕННЫЙ БЛОК "ДЛЯ БРЕНДОВ МЫ СОЗДАЕМ" ===== */
+        .brand-offer {
+            padding: var(--spacing-2xl) 0;
+            background: var(--darker);
+        }
+
+        .brand-offer-subtitle {
+            font-family: var(--font-heading);
+            font-size: var(--text-2xl);
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: var(--letter-spacing-wide);
+            line-height: var(--line-height-normal);
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            .brand-offer-subtitle {
+                font-size: var(--text-xl);
+                margin-bottom: var(--spacing-md);
+            }
+        }
+
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .offer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+        }
+
+        .video-card {
+            grid-column: span 2;
+            min-height: 450px;
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 1200px) {
+            .video-card {
+                grid-column: span 1;
+                min-height: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .video-card {
+                min-height: 350px;
+            }
+        }
+
+        .card-video-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s var(--transition-luxury);
+        }
+
+        .video-card:hover .card-video {
+            transform: scale(1.05);
+        }
+
+        .video-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, 
+                        rgba(0,0,0,0.95) 0%, 
+                        rgba(0,0,0,0.7) 50%,
+                        transparent 100%);
+            padding: 30px;
+            color: var(--white);
+        }
+
+        .video-card .card-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-2xl);
+            color: var(--white);
+            margin-bottom: var(--spacing-sm);
+            text-align: left;
+        }
+
+        .video-card .card-description {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: rgba(255, 255, 255, 0.85);
+            line-height: var(--line-height-normal);
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .offer-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .value-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            position: relative;
+        }
+
+        .value-card .card-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--spacing-sm);
+            flex-grow: 1;
+        }
+
+        .value-card .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .value-card .modern-icon {
+            margin: 0 auto var(--spacing-sm);
+            cursor: pointer;
+        }
+
+        .card-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .offer-card .modern-icon {
+            margin: 0 auto var(--spacing-sm);
+        }
+
+        .card-description {
+            font-family: var(--font-body);
+            font-size: var(--text-base);
+            color: var(--medium-text);
+            line-height: var(--line-height-normal);
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .icon-up-arrow .modern-icon::before {
+            background: var(--gradient-green);
+        }
+
+        .value-cube-container {
+            grid-column: span 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+            position: relative;
+        }
+
+        .value-counter-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .value-counter-cube {
+            width: 100%;
+            max-width: 350px;
+            height: 80px;
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-size: var(--text-3xl);
+            font-weight: 800;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.5s var(--transition-luxury);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: counter-increase 0.3s ease;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-counter-cube::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                      rgba(255,255,255,0.1) 0%, 
+                      rgba(255,255,255,0.3) 50%, 
+                      rgba(255,255,255,0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .value-counter-cube:hover {
+            transform: perspective(1000px) rotateX(5deg) translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .value-counter-cube:hover::before {
+            opacity: 1;
+        }
+
+        .value-counter-cube .counter-value {
+            transition: all 0.1s linear;
+            position: relative;
+            z-index: 2;
+            letter-spacing: var(--letter-spacing-normal);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 1200px) {
+            .value-counter-cube {
+                height: 70px;
+                font-size: var(--text-2xl);
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .value-counter-cube {
+                height: 65px;
+                font-size: var(--text-xl);
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .value-counter-cube {
+                height: 60px;
+                font-size: var(--text-lg);
+                max-width: 250px;
+            }
+        }
+
+        /* ===== БЛОК "ПОЧЕМУ ИМЕННО LUXURY-ПОЗИЦИОНИРОВАНИЕ" ===== */
+        .why-premium {
+            padding: var(--spacing-2xl) 0;
+            position: relative;
+            background: transparent;
+        }
+
+        .why-premium-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        @media (max-width: 992px) {
+            .why-premium-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .why-premium-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .why-premium .modern-card,
+        .stages .modern-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .why-premium .modern-icon {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .why-premium .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .why-premium .card-title,
+        .stages .card-title {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .why-premium .card-description,
+        .stages .card-description {
+            text-align: center;
+        }
+
+        /* ===== БЛОК "4 ЭТАПА К LUXURY-СТАТУСУ" ===== */
+        .stages {
+            padding: var(--spacing-2xl) 0;
+            background: var(--darker);
+        }
+
+        .stages-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        @media (max-width: 1200px) {
+            .stages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stage-number {
+            font-size: var(--text-4xl);
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+            font-family: var(--font-heading);
+            text-align: center;
+        }
+
+        .stages .modern-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .stages .card-title {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .stages .card-description {
+            text-align: center;
+        }
+
+        /* ===== ОБНОВЛЕННЫЕ КЕЙСЫ — СТИЛЬ КАК НА ВТОРОМ САЙТЕ ===== */
+        .cases {
+            padding: var(--spacing-2xl) 0;
+            position: relative;
+            background: transparent;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--spacing-lg);
+            align-items: stretch;
+        }
+
+        .case-card {
+            padding: 0;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            background: var(--glass-heavy);
+            border: 1px solid var(--border);
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .case-card {
+                height: 500px;
+            }
+        }
+
+        .case-card::before {
+            content: 'КЕЙС';
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: linear-gradient(135deg, var(--primary), var(--emoji-purple));
+            color: white;
+            padding: 0.3rem 0.8rem;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: 0 0 10px rgba(255, 20, 101, 0.3);
+            clip-path: polygon(5px 0%, 100% 0%, 100% calc(100% - 5px), 
+                               calc(100% - 5px) 100%, 0% 100%, 0% 5px);
+            z-index: 4;
+        }
+
+        .case-image {
+            height: 40%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 1.5s var(--transition-luxury); /* ← золотая середина: 1.5s */
+        }
+
+        /* Настройки изображений для кейсов (взяты из super09) */
+        .cases-grid .case-card:first-child .case-image img {
+            transform: scaleY(0.98);
+            transform-origin: center;
+        }
+        .cases-grid .case-card:first-child:hover .case-image img {
+            transform: scale(1.05) scaleY(0.98);
+        }
+
+        .cases-grid .case-card:last-child .case-image img {
+            transform: translateY(1%) scale(0.995);
+            transform-origin: center;
+        }
+        .cases-grid .case-card:last-child:hover .case-image img {
+            transform: translateY(1%) scale(1.05) scale(0.995);
+        }
+
+        .case-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            z-index: 2;
+            /* УЛЬТРА-ПЛАВНЫЙ, БАРХАТНЫЙ ГРАДИЕНТ — ЕДВА ЗАМЕТНЫЙ ПЕРЕХОД */
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, 
+                                                 rgba(0,0,0,0.08) 60%, 
+                                                 rgba(0,0,0,0.25) 75%, 
+                                                 rgba(0,0,0,0.6) 90%, 
+                                                 rgba(0,0,0,0.9) 100%);
+        }
+
+        .case-title {
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-2xl) * 1.15); /* 1.5rem → 1.725rem (27.6px) */
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            width: 100%;
+            line-height: var(--line-height-tight);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .case-subtitle {
+            font-size: var(--text-lg);
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: var(--spacing-sm);
+            font-weight: 600;
+            font-family: var(--font-body);
+            line-height: var(--line-height-tight);
+            letter-spacing: 0.01em;
+            width: 100%;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .case-was, .case-did, .case-result {
+            margin-bottom: var(--spacing-sm);
+            width: 100%;
+            min-height: 60px;
+        }
+
+        .case-was h4, .case-did h4, .case-result h4 {
+            color: var(--primary);
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            margin-bottom: 0.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: var(--line-height-tight);
+            width: 100%;
+            min-height: 20px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .case-was p, .case-did p, .case-result p {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-normal);
+            margin-bottom: 0.4rem;
+            letter-spacing: normal;
+            width: 100%;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .case-result-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-xs);
+            margin-top: var(--spacing-sm);
+            align-items: stretch;
+            width: 100%;
+        }
+
+        .case-stat {
+            background: rgba(255, 20, 101, 0.15);
+            padding: 0.4rem 0.8rem;
+            clip-path: polygon(5px 0%, 100% 0%, 100% calc(100% - 5px), 
+                               calc(100% - 5px) 100%, 0% 100%, 0% 5px);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 20, 101, 0.3);
+            backdrop-filter: blur(10px);
+            letter-spacing: normal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 60px;
+            height: 100%;
+        }
+
+        .case-stat span {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: var(--text-base);
+            font-family: var(--font-body);
+            line-height: 1.2;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        /* ===== ПАКЕТЫ ===== */
+        .luxury-investments {
+            padding: var(--spacing-xl) 0;
+            background: var(--dark);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            position: relative;
+        }
+
+        .investments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        @media (max-width: 1200px) {
+            .investments-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .investments-grid {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-sm);
+            }
+        }
+
+        .investment-card {
+            background: var(--glass-heavy);
+            border: 1px solid var(--border);
+            padding: var(--spacing-md);
+            transition: all 0.6s var(--transition-luxury);
+            backdrop-filter: blur(15px) saturate(180%);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transform: translateY(30px);
+            opacity: 0;
+            min-height: auto;
+            overflow: hidden;
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+        }
+
+        .investment-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .investment-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-6px);
+            box-shadow: var(--neon-glow);
+        }
+
+        .investment-card.popular {
+            border: 2px solid var(--primary);
+        }
+
+        .investment-badge {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 4px 16px;
+            font-size: var(--text-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wider);
+            clip-path: polygon(5px 0%, 100% 0%, 100% calc(100% - 5px), 
+                               calc(100% - 5px) 100%, 0% 100%, 0% 5px);
+            box-shadow: 0 4px 12px rgba(255, 20, 101, 0.3);
+            z-index: 2;
+        }
+
+        .investment-card h3 {
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-lg) * 1.15); /* 1.125rem → 1.29375rem (~20.7px) */
+            color: var(--white);
+            text-align: center;
+            margin: 15px 0 8px;
+            font-weight: 700;
+            letter-spacing: var(--letter-spacing-wide);
+            width: 100%;
+            word-break: break-word;
+        }
+
+        .investment-price {
+            font-size: var(--text-2xl);
+            color: var(--primary);
+            text-align: center;
+            font-weight: 700;
+            margin: 10px 0 5px;
+            font-family: var(--font-heading);
+            line-height: var(--line-height-tight);
+        }
+
+        .investment-price span {
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .investment-description {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: var(--text-xs);
+            margin-bottom: 15px;
+            font-style: italic;
+            letter-spacing: var(--letter-spacing-wide);
+            width: 100%;
+            word-break: break-word;
+        }
+
+        .investment-features {
+            list-style: none;
+            margin: 15px 0;
+            flex-grow: 1;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 15px;
+            width: 100%;
+            max-height: 300px;
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+
+        .investment-features::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .investment-features::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .investment-features::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .investment-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: var(--line-height-normal);
+            font-size: var(--text-xs);
+            position: relative;
+            padding-left: 20px;
+            letter-spacing: var(--letter-spacing-normal);
+            word-break: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+
+        .investment-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .investment-features strong {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .investment-footer {
+            margin-top: auto;
+            text-align: center;
+            width: 100%;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .investment-footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: var(--text-xs);
+            margin-bottom: 15px;
+            font-style: italic;
+            line-height: var(--line-height-normal);
+            letter-spacing: var(--letter-spacing-wide);
+            word-break: break-word;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .investment-card .investment-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            background: transparent;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            border: 2px solid;
+            border-image: linear-gradient(135deg, var(--primary), var(--primary-blue)) 1;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s var(--transition-luxury);
+            gap: 10px;
+            line-height: 1;
+            font-family: var(--font-body);
+            min-width: 200px;
+            width: 100%;
+            text-align: center;
+            height: 52px;
+            margin-top: 10px;
+            background: rgba(255, 20, 101, 0.05);
+            backdrop-filter: blur(10px);
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+        }
+
+        .investment-card .investment-btn-secondary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                       transparent, 
+                       rgba(255, 255, 255, 0.1), 
+                       transparent);
+            transition: left 0.7s var(--transition-luxury);
+        }
+
+        .investment-card .investment-btn-secondary:hover {
+            background: linear-gradient(135deg, rgba(255, 20, 101, 0.2), rgba(74, 111, 255, 0.2));
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(255, 20, 101, 0.3);
+            border-image: linear-gradient(135deg, var(--primary-light), var(--primary-blue)) 1;
+        }
+
+        .investment-card .investment-btn-secondary:hover::before {
+            left: 100%;
+        }
+
+        .investment-card .investment-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, #FF2D72 0%, #FF1465 100%);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s var(--transition-luxury);
+            box-shadow: 0 8px 25px rgba(255, 45, 114, 0.5);
+            gap: 10px;
+            line-height: 1;
+            font-family: var(--font-body);
+            min-width: 200px;
+            width: 100%;
+            text-align: center;
+            height: 52px;
+            margin-top: 10px;
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+        }
+
+        .investment-card .investment-btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                       transparent, 
+                       rgba(255, 255, 255, 0.25), 
+                       transparent);
+            transition: left 0.7s var(--transition-luxury);
+        }
+
+        .investment-card .investment-btn-primary:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(255, 45, 114, 0.7);
+            background: linear-gradient(135deg, #FF4180 0%, #FF2D72 100%);
+        }
+
+        .investment-card .investment-btn-primary:hover::before {
+            left: 100%;
+        }
+
+        /* ===== КОМАНДА ===== */
+        .team {
+            padding: var(--spacing-2xl) 0;
+            background: var(--darker);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        @media (max-width: 1200px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .team-member {
+            background: var(--glass-heavy);
+            border: 1px solid var(--border);
+            padding: var(--spacing-lg);
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+            transition: all 0.3s ease;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-up 0.6s ease forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        .team-member:nth-child(1) { animation-delay: 0.1s; }
+        .team-member:nth-child(2) { animation-delay: 0.2s; }
+        .team-member:nth-child(3) { animation-delay: 0.3s; }
+        .team-member:nth-child(4) { animation-delay: 0.4s; }
+
+        .team-member:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(255, 20, 101, 0.3);
+        }
+
+        .team-member-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto var(--spacing-sm);
+            background: linear-gradient(135deg, var(--primary), var(--emoji-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-lg);
+            color: white;
+        }
+
+        .team-member h3 {
+            font-family: var(--font-heading);
+            font-size: calc(var(--text-xl) * 1.15); /* 1.25rem → 1.4375rem (23px) */
+            color: var(--white);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .team-member-role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: var(--text-sm);
+        }
+
+        .team-member-desc {
+            color: var(--medium-text);
+            line-height: var(--line-height-normal);
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            padding: var(--spacing-xl) 0;
+            background: var(--darker);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-grid {
+            max-width: 600px;
+            margin: var(--spacing-lg) auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+
+        .faq-item {
+            background: var(--glass-heavy);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(15px) saturate(180%);
+            overflow: hidden;
+            transition: all 0.6s var(--transition-luxury);
+            transform: translateY(30px);
+            opacity: 0;
+            clip-path: polygon(15px 0%, 100% 0%, 100% calc(100% - 15px), 
+                               calc(100% - 15px) 100%, 0% 100%, 0% 15px);
+        }
+
+        .faq-item.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: var(--spacing-sm);
+            background: none;
+            border: none;
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.5s var(--transition-luxury);
+            line-height: var(--line-height-tight);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .faq-question:hover {
+            color: var(--primary);
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-blue) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--text-sm);
+            color: white;
+            transition: all 0.5s var(--transition-luxury);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 var(--spacing-sm);
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.6s var(--transition-luxury);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 var(--spacing-sm) var(--spacing-sm);
+            max-height: 400px;
+        }
+
+        .faq-answer p {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.75);
+            line-height: var(--line-height-normal);
+            margin: 0;
+            letter-spacing: var(--letter-spacing-normal);
+            word-break: break-word;
+        }
+
+        /* ===== КОНТАКТЫ ===== */
+        .contact {
+            padding: var(--spacing-xl) 0;
+            background: var(--darker);
+        }
+
+        .contact-subtitle {
+            font-family: var(--font-body);
+            font-size: var(--text-sm);
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto var(--spacing-md);
+            text-align: center;
+            line-height: var(--line-height-normal);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slide-in-top 0.8s var(--transition-luxury);
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: var(--spacing-sm);
+            animation: slide-in-right 0.5s var(--transition-luxury);
+            animation-fill-mode: both;
+        }
+
+        .contact-form input, 
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.03);
+            color: white;
+            font-size: var(--text-sm);
+            transition: all 0.6s var(--transition-luxury);
+            resize: vertical;
+            font-family: var(--font-body);
+            font-weight: 500;
+            appearance: none;
+            border-radius: 0;
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+            border: 1px solid transparent;
+            background-clip: padding-box;
+            position: relative;
+            letter-spacing: var(--letter-spacing-normal);
+        }
+
+        .contact-form input::before,
+        .contact-form select::before,
+        .contact-form textarea::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            background: var(--form-border-gradient);
+            z-index: -1;
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+            opacity: 0.5;
+        }
+
+        .contact-form input:focus, 
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: rgba(255, 20, 101, 0.05);
+            box-shadow: 
+                0 0 15px rgba(255, 20, 101, 0.2),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .contact-form input::placeholder, 
+        .contact-form textarea::placeholder,
+        .contact-form select {
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: var(--letter-spacing-wide);
+            font-weight: 400;
+            font-size: var(--text-sm);
+            text-transform: none;
+        }
+
+        .contact-form select option {
+            background: var(--dark);
+            color: var(--white);
+            font-size: var(--text-sm);
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            animation: slide-in-top 1s var(--transition-luxury);
+        }
+
+        #wantBtn {
+            padding: 12px 24px;
+            background: transparent;
+            color: var(--white);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wider);
+            font-size: var(--text-sm);
+            border: 1.5px solid var(--primary);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.6s var(--transition-luxury);
+            gap: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            animation: pulse-want 2s infinite;
+            min-width: 160px;
+            line-height: var(--line-height-tight);
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+        }
+
+        #wantBtn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                       transparent, 
+                       rgba(255, 255, 255, 0.1), 
+                       transparent);
+            transition: left 0.7s var(--transition-luxury);
+        }
+
+        #wantBtn:hover {
+            background: rgba(255, 20, 101, 0.1);
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(255, 20, 101, 0.3);
+            animation: none;
+            border-color: var(--primary-light);
+        }
+
+        #wantBtn:hover::before {
+            left: 100%;
+        }
+
+        #wantBtn i {
+            font-size: 1em;
+            transition: transform 0.5s var(--transition-luxury);
+        }
+
+        #wantBtn:hover i {
+            transform: rotate(15deg) scale(1.2);
+        }
+
+        #wantBtn.loading {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-blue) 100%);
+            border-color: transparent;
+            animation: none;
+        }
+
+        #wantBtn.success {
+            background: linear-gradient(135deg, #4ADE80 0%, #22C55E 100%);
+            border-color: transparent;
+            animation: success-glow 1.5s infinite;
+        }
+
+        .contact-form .btn {
+            background: #FF2D72 !important;
+            color: var(--white);
+            border: none;
+            box-shadow: 0 5px 20px rgba(255, 45, 114, 0.4);
+            flex: 1;
+            min-width: 160px;
+            padding: 12px 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 14px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s var(--transition-luxury);
+            gap: 8px;
+            line-height: 1;
+            font-family: var(--font-body);
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+            text-align: center;
+            height: 46px;
+        }
+
+        .contact-form .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, 
+                       transparent, 
+                       rgba(255, 255, 255, 0.2), 
+                       transparent);
+            transition: left 0.7s var(--transition-luxury);
+        }
+
+        .contact-form .btn:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(255, 45, 114, 0.6);
+        }
+
+        .contact-form .btn:hover::before {
+            left: 100%;
+        }
+
+        .form-hint {
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: var(--text-xs);
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 1rem;
+            line-height: var(--line-height-normal);
+            animation: slide-in-top 1.2s var(--transition-luxury);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        .form-hint i {
+            color: var(--primary);
+            margin-right: 6px;
+        }
+
+        /* ===== ФУТЕР ===== */
+        footer {
+            padding: 40px 0 25px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            background: transparent;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .footer-logo-icon {
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            transform-style: preserve-3d;
+            animation: icon-spin 15s infinite linear;
+            box-shadow: 0 0 12px rgba(255, 20, 101, 0.3);
+        }
+
+        .footer-logo span {
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.5s var(--transition-luxury);
+            clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), 
+                               calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+        }
+
+        .social-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: 0 8px 15px rgba(255, 20, 101, 0.2);
+        }
+
+        .copyright {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.75rem;
+            margin-top: 20px;
+            line-height: var(--line-height-normal);
+            letter-spacing: var(--letter-spacing-wide);
+        }
+
+        /* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+        .mobile-menu-btn {
+            display: none;
+            width: 40px;
+            height: 40px;
+            background: var(--glass);
+            border: 1px solid var(--border);
+            color: var(--white);
+            cursor: pointer;
+            position: relative;
+            z-index: 1001;
+            padding: 0;
+            backdrop-filter: blur(10px);
+            clip-path: polygon(8px 0%, 100% 0%, 100% calc(100% - 8px), 
+                               calc(100% - 8px) 100%, 0% 100%, 0% 8px);
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--white);
+            margin: 4px auto;
+            transition: all 0.5s var(--transition-luxury);
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 4px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.98);
+            backdrop-filter: blur(15px);
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.6s var(--transition-luxury);
+        }
+
+        .menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .menu-links {
+            list-style: none;
+            text-align: center;
+        }
+
+        .menu-links li {
+            margin: var(--spacing-xs) 0;
+        }
+
+        .menu-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-family: var(--font-body);
+            font-size: var(--text-lg);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: var(--letter-spacing-wider);
+            transition: color 0.5s var(--transition-luxury);
+            line-height: var(--line-height-tight);
+        }
+
+        .menu-links a:hover {
+            color: var(--primary);
+        }
+
+        .card-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .hero h1 {
+                font-size: var(--text-6xl);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-6xl);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-4xl);
+            }
+            
+            .hero-main-line,
+            .hero-sub-line {
+                font-size: var(--text-2xl);
+            }
+            
+            .hero-content {
+                width: 60%;
+            }
+            
+            .hero-visual {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .hero h1 {
+                font-size: var(--text-4xl);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-4xl);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-2xl);
+            }
+            
+            .hero-content {
+                width: 65%;
+            }
+            
+            .hero-visual {
+                width: 45%;
+                right: -5%;
+            }
+            
+            .why-premium-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .investments-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .offer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .value-counter-cube {
+                height: 70px;
+                font-size: var(--text-2xl);
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero {
+                padding-top: 90px;
+                min-height: 90vh;
+            }
+            
+            .hero h1 {
+                font-size: var(--text-3xl);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-3xl);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-xl);
+            }
+            
+            .hero-content {
+                width: 100%;
+                text-align: center;
+                gap: var(--spacing-lg);
+            }
+            
+            .hero-heading-group {
+                align-items: center;
+            }
+            
+            .hero-text-block,
+            .hero-slogan {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero-slogan::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .hero-visual {
+                display: none;
+            }
+            
+            .hero-main-line,
+            .hero-sub-line {
+                font-size: var(--text-lg);
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .welcome-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .investments-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .offer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta,
+            .form-buttons {
+                justify-content: center;
+            }
+            
+            .value-counter-container {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: var(--spacing-md) auto;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .value-counter-cube {
+                height: 65px;
+                font-size: var(--text-xl);
+                max-width: 280px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 var(--spacing-sm);
+            }
+            
+            .hero {
+                min-height: 85vh;
+                height: auto;
+                padding: 120px 0 var(--spacing-xl);
+            }
+            
+            .hero-content {
+                gap: var(--spacing-lg);
+            }
+            
+            .hero h1 {
+                font-size: var(--text-2xl);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-2xl);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-lg);
+            }
+            
+            .hero-main-line,
+            .hero-sub-line {
+                font-size: var(--text-base);
+            }
+            
+            .cta {
+                width: 100%;
+                max-width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            .hero-slogan {
+                font-size: var(--text-sm);
+                padding-left: var(--spacing-md);
+            }
+            
+            .hero-slogan::before {
+                font-size: var(--text-xl);
+            }
+            
+            .why-premium-grid,
+            .stages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: var(--text-3xl);
+                text-align: center;
+                display: block;
+            }
+            
+            .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+            }
+            
+            .welcome-card {
+                height: 350px;
+            }
+            
+            .form-buttons {
+                flex-direction: column;
+            }
+            
+            .case-card {
+                height: 500px;
+            }
+            
+            .case-title {
+                font-size: calc(var(--text-2xl) * 1.15); /* 27.6px */
+            }
+            
+            .case-subtitle {
+                font-size: var(--text-base);
+            }
+            
+            .value-counter-cube {
+                height: 60px;
+                font-size: var(--text-lg);
+                max-width: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 0 var(--spacing-lg);
+            }
+            
+            .hero-content {
+                gap: var(--spacing-md);
+            }
+            
+            .hero h1 {
+                font-size: var(--text-xl);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-xl);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-base);
+            }
+            
+            .hero-main-line,
+            .hero-sub-line {
+                font-size: var(--text-sm);
+            }
+            
+            .hero-text-block {
+                margin-bottom: 0;
+            }
+            
+            .cta {
+                flex-direction: column;
+                gap: var(--spacing-xs);
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .cta .btn,
+            .cta .btn-secondary {
+                width: 100% !important;
+                justify-content: center;
+                padding: 10px 15px;
+                height: 44px;
+            }
+            
+            .hero-slogan {
+                font-size: var(--text-sm);
+                padding-left: var(--spacing-md);
+                margin-top: 0;
+            }
+            
+            .hero-slogan::before {
+                font-size: var(--text-lg);
+            }
+            
+            .welcome-card {
+                height: 300px;
+            }
+            
+            .case-card {
+                height: 450px;
+            }
+            
+            .case-title {
+                font-size: calc(var(--text-2xl) * 1.15); /* 27.6px → адаптивно */
+            }
+            
+            .case-subtitle {
+                font-size: var(--text-sm);
+            }
+            
+            .case-result-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .value-counter-cube {
+                height: 55px;
+                font-size: var(--text-base);
+                max-width: 220px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero h1 {
+                font-size: var(--text-lg);
+            }
+            
+            .hero h1 .premium {
+                font-size: var(--text-lg);
+            }
+            
+            .hero h1 .subtitle {
+                font-size: var(--text-base);
+            }
+            
+            .logo-text {
+                font-size: var(--text-lg);
+            }
+            
+            .cta .btn,
+            .cta .btn-secondary {
+                padding: 8px 12px;
+                font-size: 12px;
+                height: 42px;
+            }
+            
+            .value-counter-cube {
+                height: 50px;
+                font-size: var(--text-sm);
+                max-width: 200px;
+            }
+        }
+
+        .hero-text-block {
+            font-family: var(--font-body);
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        .cta {
+            margin-left: 0;
+            margin-right: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- ПАРАЛЛАКС ФОНЫ -->
+    <div class="parallax-bg layer-1"></div>
+    <div class="parallax-bg layer-2"></div>
+    <div class="parallax-bg layer-3"></div>
+
+    <!-- Частицы -->
+    <div id="particles"></div>
+
+    <!-- НАВИГАЦИЯ -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="logo-text">Icon <span>Image</span></div>
+                </div>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Главная</a></li>
+                    <li><a href="#welcome">Лаборатория</a></li>
+                    <li><a href="#brand-offer">Предложения</a></li>
+                    <li><a href="#why-premium">Почему Luxury</a></li>
+                    <li><a href="#stages">Этапы</a></li>
+                    <li><a href="#investments">Пакеты</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="menu-overlay" id="menuOverlay">
+        <ul class="menu-links">
+            <li><a href="#home" class="menu-link">Главная</a></li>
+            <li><a href="#welcome" class="menu-link">Лаборатория</a></li>
+            <li><a href="#brand-offer" class="menu-link">Предложения</a></li>
+            <li><a href="#why-premium" class="menu-link">Почему Luxury</a></li>
+            <li><a href="#stages" class="menu-link">Этапы</a></li>
+            <li><a href="#investments" class="menu-link">Пакеты</a></li>
+            <li><a href="#cases" class="menu-link">Кейсы</a></li>
+            <li><a href="#team" class="menu-link">Команда</a></li>
+            <li><a href="#faq" class="menu-link">FAQ</a></li>
+            <li><a href="#contact" class="menu-link">Контакты</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO БЛОК -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-heading-group">
+                    <h1>
+                        <span class="premium">Luxury-позиционирование</span>
+                        <span class="subtitle">для Вашего бренда</span>
+                    </h1>
+                </div>
+                
+                <div class="hero-text-block">
+                    <div class="hero-main-line">Создаём стратегию, эстетику и контент</div>
+                    <div class="hero-sub-line">для привлечения аудитории luxury-сегмента</div>
+                </div>
+                
+                <div class="cta">
+                    <button class="btn beveled" onclick="window.location.href='#welcome'">
+                        <i class="fas fa-info-circle"></i> УЗНАТЬ БОЛЬШЕ
+                    </button>
+                    <button class="btn-secondary beveled" onclick="window.location.href='#contact'">
+                        <i class="fas fa-play"></i> НАЧАТЬ
+                    </button>
+                </div>
+                
+                <div class="hero-slogan">
+                    Сделайте свой продукт luxury вместе с Icon Image
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="cyber-gif-container beveled">
+                <video autoplay muted loop playsinline class="cyber-gif">
+                    <source src="cyber1girl.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <div class="cyber-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ "ЛАБОРАТОРИЯ ЛЮКСА" — ПОЛНОСТЬЮ КАК В SUPER12.HTML -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <div class="welcome-container">
+                <div class="welcome-left">
+                    <div class="welcome-card">
+                        <video class="welcome-video" autoplay muted loop playsinline>
+                            <source src="888.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                </div>
+                <div class="welcome-right">
+                    <div class="typing-headline">
+                        <h2 class="welcome-title" id="welcomeTitle"></h2>
+                        <div class="welcome-subtitle" id="welcomeSubtitle"></div>
+                    </div>
+                    
+                    <div class="situations-list" id="situationsList">
+                        <div class="situation-item" id="situation1">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span id="situation1-text"></span>
+                        </div>
+                        <div class="situation-item" id="situation2">
+                            <i class="fas fa-eye"></i>
+                            <span id="situation2-text"></span>
+                        </div>
+                        <div class="situation-item" id="situation3">
+                            <i class="fas fa-comments"></i>
+                            <span id="situation3-text"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="welcome-conclusion" id="welcomeConclusion">
+                        Каждый наш проект — уникальная история, где искусство люкса гармонично объединяется с технологиями нового времени
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК "ДЛЯ БРЕНДОВ МЫ СОЗДАЕМ" -->
+    <section class="brand-offer" id="brand-offer">
+        <div class="container">
+            <h2 class="section-title">Для брендов мы создаем</h2>
+            <h3 class="brand-offer-subtitle">Архитектуру премиального позиционирования, где каждый элемент — часть цельного luxury-образа</h3>
+            
+            <div class="offer-grid">
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-blue">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Анализ рынка и конкурентов</h3>
+                    <p class="card-description">Исследуем премиум-сегмент, выявляем тренды и находим возможности для вашего бренда.</p>
+                </div>
+                
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-purple">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Стратегия позиционирования</h3>
+                    <p class="card-description">Создаем стратегию, которая выделяет вас среди масс-маркета и конкурентов.</p>
+                </div>
+                
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-cyan">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Архитектура бренда</h3>
+                    <p class="card-description">Создаем целостную систему идентичности, где каждый элемент гармонично взаимодействует и усиливает позиционирование.</p>
+                </div>
+                
+                <div class="modern-card video-card beveled">
+                    <div class="card-video-container">
+                        <video autoplay muted loop playsinline class="card-video">
+                            <source src="333.mp4" type="video/mp4">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                        <div class="video-overlay">
+                            <h3 class="card-title">Luxury-эстетика</h3>
+                            <p class="card-description">Разрабатываем визуальный язык, который транслирует статус и исключительность. От выбора цветовой палитры до типографики — каждая деталь работает на создание целостного образа.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value-cube-container">
+                    <div class="value-counter-container" id="valueCounterContainer">
+                        <div class="value-counter-cube beveled">
+                            <span class="counter-value" id="counterValue">0$</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modern-card value-card beveled" id="valueCard">
+                        <div class="card-icon-wrapper">
+                            <div class="modern-icon icon-up-arrow" id="valueIcon">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Увеличение ценности</h3>
+                            <p class="card-description">Формируем образ, который оправдывает высокую цену и привлекает платежеспособную аудиторию.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-orange">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Контент-стратегия</h3>
+                    <p class="card-description">Создаем тексты и визуалы, которые говорят на языке luxury-клиентов.</p>
+                </div>
+                
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-cyan">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Продвижение</h3>
+                    <p class="card-description">Выстраиваем каналы коммуникации с целевой аудиторией через премиальные площадки.</p>
+                </div>
+                
+                <div class="modern-card offer-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-pink">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Реализация стратегии</h3>
+                    <p class="card-description">Воплощаем стратегию через все каналы коммуникации, обеспечивая последовательное и целостное позиционирование бренда.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОЧЕМУ ИМЕННО LUXURY-ПОЗИЦИОНИРОВАНИЕ -->
+    <section class="why-premium" id="why-premium">
+        <div class="container">
+            <h2 class="section-title">Почему именно luxury-позиционирование</h2>
+            
+            <div class="why-premium-grid">
+                <article class="modern-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-pink">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Создает желание обладания</h3>
+                        <p class="card-description">Клиент сам хочет обладать вашим продуктом, а не вы пытаетесь ему продать.</p>
+                    </div>
+                </article>
+                
+                <article class="modern-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-purple">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Имеет оправданную цену</h3>
+                        <p class="card-description">Клиент понимает, что обретая продукт - он инвестирует в статус, а не просто тратит деньги.</p>
+                    </div>
+                </article>
+                
+                <article class="modern-card beveled">
+                    <div class="card-icon-wrapper">
+                        <div class="modern-icon icon-blue">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Привлекает аудиторию ценителей</h3>
+                        <p class="card-description">Привлекаем тех, кто ценит эксклюзивность, а не ищет скидки.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 ЭТАПА К LUXURY-СТАТУСУ -->
+    <section class="stages" id="stages">
+        <div class="container">
+            <h2 class="section-title">4 этапа к luxury-статусу</h2>
+            
+            <div class="stages-grid">
+                <article class="modern-card beveled">
+                    <div class="stage-number">01</div>
+                    <h3 class="card-title">Глубокий анализ</h3>
+                    <p class="card-description">Исследуем рынок, конкурентов и аудиторию. Находим "слепые зоны" и точки роста.</p>
+                </article>
+                
+                <article class="modern-card beveled">
+                    <div class="stage-number">02</div>
+                    <h3 class="card-title">Стратегия позиционирования</h3>
+                    <p class="card-description">Определяем уникальное ценностное предложение, тональность, ключевые сообщения.</p>
+                </article>
+                
+                <article class="modern-card beveled">
+                    <div class="stage-number">03</div>
+                    <h3 class="card-title">Визуальная эстетика</h3>
+                    <p class="card-description">Создаём дизайн-систему: логотип, цветовая палитра, типографика, фотостиль.</p>
+                </article>
+                
+                <article class="modern-card beveled">
+                    <div class="stage-number">04</div>
+                    <h3 class="card-title">Коммуникация и запуск</h3>
+                    <p class="card-description">Разрабатываем контент-план, тексты, запускаем кампанию.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПАКЕТЫ -->
+    <section class="luxury-investments" id="investments">
+        <div class="container">
+            <h2 class="section-title">Пакеты</h2>
+            
+            <div class="investments-grid">
+                <div class="investment-card beveled">
+                    <div class="investment-badge">Foundation</div>
+                    <h3>FOUNDATION</h3>
+                    <div class="investment-price">5 000 <span>€</span></div>
+                    <div class="investment-description">Базовое позиционирование</div>
+                    
+                    <ul class="investment-features">
+                        <li><strong>Глубинный аудит</strong> — 15-страничный анализ вашего текущего положения</li>
+                        <li><strong>Стратегия позиционирования</strong> — определение места на luxury-рынке</li>
+                        <li><strong>Миссия и ценности бренда</strong> — создание философии бренда</li>
+                        <li><strong>Нейминг</strong> — 3 эксклюзивных варианта + лингвистическая экспертиза</li>
+                        <li><strong>Логотип</strong> — 2 концепции в черно-белой гамме</li>
+                        <li><strong>Базовый бренд-гайдлайн</strong> — 10 страниц правил использования</li>
+                        <li><strong>Luxury-копирайтинг</strong> — текст для главной страницы сайта</li>
+                        <li><strong>1 фотосессия продукта</strong> — 5 профессиональных снимков</li>
+                        <li><strong>Консультация по внедрению</strong> — 1 встреча с арт-директором</li>
+                    </ul>
+                    
+                    <div class="investment-footer">
+                        <p>Идеально для: личного бренда эксперта или капсульной коллекции</p>
+                        <a href="#contact" class="investment-btn-secondary beveled">
+                            <i class="fas fa-comments"></i> Обсудить детали
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="investment-card beveled popular">
+                    <div class="investment-badge">Signature</div>
+                    <h3>SIGNATURE</h3>
+                    <div class="investment-price">10 000 <span>€</span></div>
+                    <div class="investment-description">Комплексный luxury-брендинг</div>
+                    
+                    <ul class="investment-features">
+                        <li><strong>Экспертное исследование</strong> — интервью с вашими клиентами + конкурентный анализ</li>
+                        <li><strong>Полная стратегия</strong> — 25 страниц: ценности, тональность, ключевые сообщения</li>
+                        <li><strong>Премиальный нейминг</strong> — 5 вариантов + проверка в 15 юрисдикциях</li>
+                        <li><strong>Визуальная идентичность</strong> — логотип, цветовая палитра (3 основных + 2 акцентных), типографика (2 шрифта)</li>
+                        <li><strong>Расширенный бренд-бук</strong> — 40+ страниц, включая примеры применения</li>
+                        <li><strong>Luxury-копирайтинг</strong> — текст для главной страницы + 3 раздела сайта</li>
+                        <li><strong>Дизайн носителей</strong> — визитки, конверт, бланк на премиальной бумаге</li>
+                        <li><strong>Профессиональная фотосессия</strong> — 1 день, 10 обработанных фото продукта</li>
+                        <li><strong>Контент-стратегия</strong> — план на 3 месяца для соцсетей</li>
+                        <li><strong>3 месяца поддержки</strong> — ответы на вопросы по внедрению</li>
+                    </ul>
+                    
+                    <div class="investment-footer">
+                        <p>Идеально для: люксового ритейла, премиальных услуг, винодельни, ювелирного дома</p>
+                        <a href="#contact" class="investment-btn-primary beveled">
+                            <i class="fas fa-play"></i> Начать сотрудничество
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="investment-card beveled">
+                    <div class="investment-badge">Legacy</div>
+                    <h3>LEGACY</h3>
+                    <div class="investment-price">25 000 <span>€</span></div>
+                    <div class="investment-description">Полное погружение</div>
+                    
+                    <ul class="investment-features">
+                        <li><strong>Глубинное исследование</strong> — с привлечением международных экспертов индустрии</li>
+                        <li><strong>Стратегия наследия</strong> — бренд как семейная ценность на 10 лет вперёд</li>
+                        <li><strong>Эксклюзивный нейминг</strong> — работа с лингвистами + психосемантический анализ</li>
+                        <li><strong>Полная визуальная система</strong> — основной логотип + 5 альтернативных версий + паттерны + иконография</li>
+                        <li><strong>Шедевральный бренд-бук</strong> — 80+ страниц, переплетённый в кожу, с арт-дирекшн съёмками</li>
+                        <li><strong>Полный luxury-копирайтинг</strong> — все тексты сайта + история бренда + 5 статей для медиа</li>
+                        <li><strong>Дизайн упаковки</strong> — 3 концепции с прототипированием и образцами материалов</li>
+                        <li><strong>Профессиональная фото/видеосъёмка</strong> — 2 дня съёмок, 20 фото + 1 рекламный ролик</li>
+                        <li><strong>Айдентика пространства</strong> — концепция оформления офиса/бутика</li>
+                        <li><strong>Мерч для команды</strong> — дизайн 5 предметов для внутреннего использования</li>
+                        <li><strong>6 месяцев сопровождения</strong> — регулярные встречи с командой бренда</li>
+                    </ul>
+                    
+                    <div class="investment-footer">
+                        <p>Идеально для: семейного офиса, luxury-отелей, автомобилей премиум-класса, винтажных домов моды</p>
+                        <a href="#contact" class="investment-btn-secondary beveled">
+                            <i class="fas fa-file-pdf"></i> Запросить презентацию
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КЕЙСЫ — ОБНОВЛЕНЫ ПО ВСЕМ ТРЕБОВАНИЯМ -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <h2 class="section-title">Кейсы → как мы создаём luxury-бренды</h2>
+            <div class="cases-grid">
+                <article class="case-card modern-card beveled">
+                    <div class="case-image">
+                        <img src="1.avif" alt="LUXE SKIN - Косметика luxury-класса">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">LUXE SKIN</h3>
+                        <div class="case-subtitle">Косметика luxury-класса</div>
+                        
+                        <div class="case-was">
+                            <h4>Было:</h4>
+                            <p>Нишевая косметика без чёткого позиционирования, конкуренция на основе цены.</p>
+                        </div>
+                        
+                        <div class="case-did">
+                            <h4>Сделали:</h4>
+                            <p>Стратегия "лабораторная роскошь", минималистичный дизайн, контент про науку и эффективность.</p>
+                        </div>
+                        
+                        <div class="case-result">
+                            <h4>Результат:</h4>
+                            <p>Средний чек вырос на 60%, бренд попал в топовые бьюти-бутики.</p>
+                            <div class="case-result-stats">
+                                <div class="case-stat"><span>+60%</span> средний чек</div>
+                                <div class="case-stat"><span>Топ-5</span> бьюти-бутиков</div>
+                                <div class="case-stat"><span>+45%</span> лояльность</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="case-card modern-card beveled">
+                    <div class="case-image">
+                        <img src="2.webp" alt="GOLDEN LINE - Ювелирный бренд">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">GOLDEN LINE</h3>
+                        <div class="case-subtitle">Ювелирный бренд</div>
+                        
+                        <div class="case-was">
+                            <h4>Было:</h4>
+                            <p>Классический дизайн, аудитория 40+, слабое присутствие в интернете.</p>
+                        </div>
+                        
+                        <div class="case-did">
+                            <h4>Сделали:</h4>
+                            <p>Обновили визуал, сохранив традиции. Запустили онлайн-продажи и коллаборации с художниками.</p>
+                        </div>
+                        
+                        <div class="case-result">
+                            <h4>Результат:</h4>
+                            <p>Привлекли аудиторию 25-35 лет, увеличили онлайн-продажи в 3 раза.</p>
+                            <div class="case-result-stats">
+                                <div class="case-stat"><span>3x</span> онлайн-продажи</div>
+                                <div class="case-stat"><span>25-35</span> новая аудитория</div>
+                                <div class="case-stat"><span>+70%</span> трафик</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Даниил М.</h3>
+                    <div class="team-member-role">Аналитик</div>
+                    <p class="team-member-desc">PhD в маркетинге. Строит прогнозные модели для luxury-рынка.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Анна К.</h3>
+                    <div class="team-member-role">Стратег</div>
+                    <p class="team-member-desc">10 лет в premium-маркетинге. Работала с люксовыми авто и часами.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Михаил П.</h3>
+                    <div class="team-member-role">Арт-директор</div>
+                    <p class="team-member-desc">Специализируется на минималистичной эстетике. Ведёт проекты в fashion-индустрии.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Елена С.</h3>
+                    <div class="team-member-role">Копирайтер</div>
+                    <p class="team-member-desc">Пишет для Forbes, Robb Report. Создаёт тексты, которые продают статус.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Сколько времени занимает проект?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Сроки зависят от масштаба проекта. Средний проект занимает от 4 до 8 недель. Полный ребрендинг с разработкой стратегии может занять до 12 недель.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Какой бюджет нужен для работы с вами?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Минимальный бюджет — от 5000 €. Точная стоимость зависит от задач. После консультации мы отправим подробную смету.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Работаете ли вы с зарубежными брендами?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы работаем в том числе с брендами из ОАЭ, Европы и США. У нас есть опыт позиционирования брендов на международных рынках.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Что входит в стоимость проекта?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>В стоимость входит: анализ рынка, стратегия позиционирования, разработка визуальной эстетики, контент-стратегия и поддержка на этапе запуска.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Можно ли заказать только часть услуг?</span>
+                        <div class="faq-icon">+</div>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Да, мы предлагаем как комплексные решения, так и отдельные услуги: только стратегию, только дизайн или только контент.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Обсудить проект</h2>
+            <p class="contact-subtitle">
+                Расскажите о Вашей идее и мы поможем воплотить её в жизнь
+            </p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="company" name="company" placeholder="Компания / Бренд" required autocomplete="organization">
+                </div>
+                <div class="form-group">
+                    <select id="task" name="task" required autocomplete="off">
+                        <option value="" disabled selected>Основная задача</option>
+                        <option value="rebranding">Ребрендинг</option>
+                        <option value="launch">Запуск нового бренда</option>
+                        <option value="positioning">Повышение ценности бренда</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Ваш email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Ваш телефон" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Опишите ваш бренд и ваше видение его будущего в luxury-сегменте" required autocomplete="off"></textarea>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" id="wantBtn" class="beveled">
+                        <i class="fas fa-magic"></i> Хочу
+                    </button>
+                    
+                    <button type="submit" class="btn beveled">
+                        <i class="fas fa-paper-plane"></i> Начать
+                    </button>
+                </div>
+                
+                <div class="form-hint">
+                    <i class="fas fa-lightbulb"></i> Нажмите "Хочу" для заполнения формы вашими данными
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div>Icon <span>Image</span></div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link beveled"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-link beveled"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-link beveled"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link beveled"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <div class="copyright">
+                © 2026 Icon Image. Luxury-позиционирование брендов. Все права защищены.<br>
+                Монако • 24/7 поддержка: +33 7 49 73 38 87
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===== ЧАСТИЦЫ =====
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 80; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.animationDelay = `-15 + Math.random() * 15}s`;
+            particle.style.animationDuration = `15 + Math.random() * 15}s`;
+            particle.style.opacity = `${0.3 + Math.random() * 0.7}`;
+            particle.style.width = `${1 + Math.random() * 2}px`;
+            particle.style.height = particle.style.width;
+            particlesContainer.appendChild(particle);
+        }
+
+        // ===== ПАРАЛЛАКС =====
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxLayers = document.querySelectorAll('.parallax-bg');
+            
+            parallaxLayers.forEach((layer, index) => {
+                const speed = 0.5 * (index + 1);
+                layer.style.transform = `translateY(${scrolled * speed * 0.1}px)`;
+            });
+        });
+
+        // ===== HEADER SCROLL =====
+        const header = document.getElementById('header');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // ===== МОБИЛЬНОЕ МЕНЮ =====
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            document.body.style.overflow = menuOverlay.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // ===== HERO БЛОК ЭФФЕКТЫ =====
+        const heroButtons = document.querySelectorAll('.cta .btn, .cta .btn-secondary');
+        heroButtons.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // ===== ОБНОВЛЕННАЯ WELCOME СЕКЦИЯ =====
+        const welcomeSection = document.querySelector('.welcome-section');
+        const welcomeVideo = document.querySelector('.welcome-video');
+        
+        if (welcomeVideo) {
+            welcomeVideo.play().catch(err => {
+                console.log('Видео не может быть воспроизведено:', err);
+            });
+        }
+        
+        async function typeText(element, text, speed = 40) {
+            return new Promise(resolve => {
+                let i = 0;
+                element.innerHTML = '';
+                
+                function typeChar() {
+                    if (i < text.length) {
+                        element.innerHTML += text.charAt(i);
+                        i++;
+                        
+                        const randomDelay = speed + Math.random() * 30;
+                        setTimeout(typeChar, randomDelay);
+                    } else {
+                        resolve();
+                    }
+                }
+                
+                typeChar();
+            });
+        }
+        
+        const welcomeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('visible')) {
+                    entry.target.classList.add('visible');
+                    
+                    setTimeout(async () => {
+                        const welcomeTitle = document.getElementById('welcomeTitle');
+                        const welcomeSubtitle = document.getElementById('welcomeSubtitle');
+                        const welcomeConclusion = document.getElementById('welcomeConclusion');
+                        
+                        await typeText(welcomeTitle, 'Лаборатория люкса', 50);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 300));
+                        
+                        await typeText(welcomeSubtitle, 'Мы с удовольствием поможем Вам, если вы столкнулись с ситуацией, когда:', 50);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 300));
+                        
+                        const situation1 = document.getElementById('situation1');
+                        const situation1Text = document.getElementById('situation1-text');
+                        const situation2 = document.getElementById('situation2');
+                        const situation2Text = document.getElementById('situation2-text');
+                        const situation3 = document.getElementById('situation3');
+                        const situation3Text = document.getElementById('situation3-text');
+                        
+                        situation1.classList.add('visible');
+                        await typeText(situation1Text, 'Клиенты не понимают, за что переплачивать. Приходят ценители скидок, а не ценители качества.', 30);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 200));
+                        
+                        situation2.classList.add('visible');
+                        await typeText(situation2Text, 'Визуал устарел и не транслирует статус. Бренд выглядит как эконом, а не люкс.', 30);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 200));
+                        
+                        situation3.classList.add('visible');
+                        await typeText(situation3Text, 'Нет системы коммуникации, которая поддерживает образ luxury.', 30);
+                        
+                        await new Promise(resolve => setTimeout(resolve, 400));
+                        welcomeConclusion.classList.add('visible');
+                        
+                    }, 500);
+                }
+            });
+        }, { 
+            threshold: 0.2,
+            rootMargin: '0px 0px -100px 0px'
+        });
+        
+        if (welcomeSection) {
+            welcomeObserver.observe(welcomeSection);
+        }
+
+        // ===== АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ =====
+        const animatedElements = document.querySelectorAll('.faq-item, .investment-card, .modern-card, .team-member');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, 100);
+                }
+            });
+        }, { 
+            threshold: 0.1,
+            rootMargin: '0px 0px -80px 0px'
+        });
+        
+        animatedElements.forEach(element => observer.observe(element));
+
+        // ===== FAQ ФУНКЦИОНАЛ =====
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item && otherItem.classList.contains('active')) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                item.classList.toggle('active');
+            });
+        });
+
+        // ===== АВТОЗАПОЛНЕНИЕ ФОРМЫ =====
+        const wantBtn = document.getElementById('wantBtn');
+        const contactForm = document.getElementById('contactForm');
+        
+        async function typeTextForm(element, text, speed = 40) {
+            return new Promise(resolve => {
+                let i = 0;
+                element.value = '';
+                
+                function typeChar() {
+                    if (i < text.length) {
+                        element.value += text.charAt(i);
+                        i++;
+                        
+                        const randomDelay = speed + Math.random() * 50;
+                        setTimeout(typeChar, randomDelay);
+                    } else {
+                        element.style.animation = 'field-glow 0.8s ease';
+                        setTimeout(() => {
+                            element.style.animation = '';
+                            resolve();
+                        }, 800);
+                    }
+                }
+                
+                typeChar();
+            });
+        }
+        
+        async function fillFormWithRealData() {
+            const originalText = wantBtn.innerHTML;
+            const originalClass = wantBtn.className;
+            
+            wantBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Заполняем...';
+            wantBtn.classList.add('loading');
+            wantBtn.disabled = true;
+            
+            const formData = {
+                name: "Self Perfection",
+                company: "Luxury Brands International",
+                email: "selfperfection@gmail.com",
+                phone: "+33 7 77 77 77 77",
+                task: "positioning",
+                message: "Хочу получить личную консультацию на тему бренда моего продукта. Мой продукт - это само совершенство, и я хочу, чтобы мир это увидел."
+            };
+            
+            const fields = [
+                { element: contactForm.querySelector('[name="name"]'), value: formData.name, type: 'text' },
+                { element: contactForm.querySelector('[name="company"]'), value: formData.company, type: 'text' },
+                { element: contactForm.querySelector('[name="email"]'), value: formData.email, type: 'text' },
+                { element: contactForm.querySelector('[name="phone"]'), value: formData.phone, type: 'text' },
+                { element: contactForm.querySelector('[name="task"]'), value: formData.task, type: 'select' },
+                { element: contactForm.querySelector('[name="message"]'), value: formData.message, type: 'textarea' }
+            ];
+            
+            for (let i = 0; i < fields.length; i++) {
+                const field = fields[i];
+                if (field.element && field.value) {
+                    if (field.type === 'select') {
+                        field.element.value = field.value;
+                        field.element.style.animation = 'field-glow 0.8s ease';
+                        setTimeout(() => {
+                            field.element.style.animation = '';
+                        }, 800);
+                    } else {
+                        await typeTextForm(field.element, field.value, 50 + i * 5);
+                    }
+                    
+                    await new Promise(resolve => setTimeout(resolve, 200));
+                }
+            }
+            
+            wantBtn.innerHTML = '<i class="fas fa-check"></i> Готово!';
+            wantBtn.classList.remove('loading');
+            wantBtn.classList.add('success');
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            submitBtn.focus();
+            
+            showNotification('Форма заполнена! Можно нажимать "Начать"');
+            
+            setTimeout(() => {
+                wantBtn.innerHTML = originalText;
+                wantBtn.className = originalClass;
+                wantBtn.disabled = false;
+            }, 2000);
+        }
+        
+        contactForm.addEventListener('input', (e) => {
+            if (e.target.name === 'name') {
+                localStorage.setItem('user_name', e.target.value);
+            } else if (e.target.name === 'email') {
+                localStorage.setItem('user_email', e.target.value);
+            } else if (e.target.name === 'phone') {
+                localStorage.setItem('user_phone', e.target.value);
+            } else if (e.target.name === 'company') {
+                localStorage.setItem('user_company', e.target.value);
+            }
+        });
+        
+        wantBtn.addEventListener('click', fillFormWithRealData);
+        
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 25px;
+                    right: 25px;
+                    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-blue) 100%);
+                    color: white;
+                    padding: 12px 20px;
+                    border-radius: 8px;
+                    z-index: 10000;
+                    animation: slide-in-right 0.5s var(--transition-luxury);
+                    font-size: var(--text-xs);
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    box-shadow: 0 10px 25px rgba(255, 20, 101, 0.4);
+                    backdrop-filter: blur(12px);
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    max-width: 320px;
+                    font-weight: 500;
+                ">
+                    <i class="fas fa-sparkles" style="font-size: 1.1em;"></i>
+                    ${message}
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slide-in-right 0.5s var(--transition-luxury) reverse';
+                setTimeout(() => notification.remove(), 500);
+            }, 3000);
+        }
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            const originalBackground = submitBtn.style.background;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Отправлено!';
+                submitBtn.style.background = 'linear-gradient(135deg, #4ADE80 0%, #22C55E 100%)';
+                
+                showNotification('Заявка отправлена! Мы свяжемся с вами в течение 24 часов.');
+                
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = originalBackground;
+                }, 3000);
+            }, 1500);
+        });
+
+        // ===== ПАРАЛЛЕЛЕПИПЕД С ЦЕННОСТЬЮ =====
+        const counterValueElement = document.getElementById('counterValue');
+        const valueCounterContainer = document.getElementById('valueCounterContainer');
+        const valueCard = document.getElementById('valueCard');
+        const valueIcon = document.getElementById('valueIcon');
+        
+        let counterValue = 0;
+        let counterStage = 0;
+        let isAnimating = false;
+        
+        function animateCounter(targetValue, duration = 4000) {
+            return new Promise(resolve => {
+                if (isAnimating) return;
+                isAnimating = true;
+                
+                const startValue = counterValue;
+                const valueDifference = targetValue - startValue;
+                const steps = Math.min(100, Math.floor(duration / 20));
+                const stepValue = valueDifference / steps;
+                let currentStep = 0;
+                
+                function updateCounter() {
+                    currentStep++;
+                    counterValue = startValue + (stepValue * currentStep);
+                    
+                    const formattedValue = Math.round(counterValue).toLocaleString('ru-RU') + '$';
+                    counterValueElement.textContent = formattedValue;
+                    
+                    counterValueElement.style.transform = `scale(${1 + Math.sin(currentStep * 0.1) * 0.05})`;
+                    
+                    if (currentStep < steps) {
+                        setTimeout(updateCounter, duration / steps);
+                    } else {
+                        counterValue = targetValue;
+                        counterValueElement.textContent = targetValue.toLocaleString('ru-RU') + '$';
+                        counterValueElement.style.transform = 'scale(1)';
+                        isAnimating = false;
+                        resolve();
+                    }
+                }
+                
+                updateCounter();
+            });
+        }
+        
+        if (valueIcon) {
+            valueIcon.addEventListener('click', async () => {
+                if (isAnimating) return;
+                
+                if (counterStage === 0) {
+                    await animateCounter(24, 800);
+                    counterStage = 1;
+                } else if (counterStage === 1) {
+                    await animateCounter(240, 4000);
+                    counterStage = 2;
+                } else if (counterStage === 2) {
+                    await animateCounter(2400, 4000);
+                    counterStage = 3;
+                } else if (counterStage === 3) {
+                    await animateCounter(24000, 4000);
+                    counterStage = 4;
+                }
+                
+                valueIcon.style.animation = 'icon-glow 0.5s ease';
+                setTimeout(() => {
+                    valueIcon.style.animation = '';
+                }, 500);
+            });
+        }
+        
+        let hoverTimeout;
+        valueCounterContainer.addEventListener('mouseenter', () => {
+            if (counterStage === 0) {
+                hoverTimeout = setTimeout(async () => {
+                    await animateCounter(24, 800);
+                    counterStage = 1;
+                }, 500);
+            }
+        });
+        
+        valueCounterContainer.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout);
+        });
+        
+        const valueCube = document.querySelector('.value-counter-cube');
+        if (valueCube) {
+            valueCube.addEventListener('click', async () => {
+                if (isAnimating) return;
+                
+                if (counterStage === 0) {
+                    await animateCounter(24, 800);
+                    counterStage = 1;
+                } else if (counterStage === 1) {
+                    await animateCounter(240, 4000);
+                    counterStage = 2;
+                } else if (counterStage === 2) {
+                    await animateCounter(2400, 4000);
+                    counterStage = 3;
+                } else if (counterStage === 3) {
+                    await animateCounter(24000, 4000);
+                    counterStage = 4;
+                }
+            });
+        }
+
+        // ===== ПЛАВНЫЙ СКРОЛЛ =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    if (menuOverlay.classList.contains('active')) {
+                        mobileMenuBtn.classList.remove('active');
+                        menuOverlay.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                }
+            });
+        });
+
+        // ===== ИНИЦИАЛИЗАЦИЯ =====
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                animatedElements.forEach((el, index) => {
+                    setTimeout(() => {
+                        if (el.getBoundingClientRect().top < window.innerHeight * 1.2) {
+                            el.classList.add('visible');
+                        }
+                    }, index * 80);
+                });
+                
+                setTimeout(() => {
+                    const firstField = document.querySelector('#contactForm input');
+                    if (firstField && !firstField.value) {
+                        wantBtn.style.animation = 'pulse-want 1s 3';
+                    }
+                }, 4000);
+                
+                setTimeout(() => {
+                    document.querySelector('.logo').style.transform = 'translateY(0)';
+                }, 500);
+                
+                document.body.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.style.transition = 'opacity 0.8s var(--transition-luxury)';
+                    document.body.style.opacity = '1';
+                }, 100);
+            }, 300);
+        });
+    </script>
+</body>
+</html>
